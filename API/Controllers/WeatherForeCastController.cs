@@ -2,17 +2,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
 
-[ApiController]
-[Route("[controller]")]
-
-public class WeatherForecastCheckController : BaseApiController
+public class WeatherForecastController : BaseApiController
 {
     private static readonly string[] _summaries = new[]
     {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
-    public WeatherForecastCheckController()
+    public WeatherForecastController()
     {
     }
 
